@@ -1,0 +1,12 @@
+C:\Users\Alan\Documents\GitHub\playground-csharp\testAPI\testAPI.Contracts\bin\Debug\net8.0\testAPI.Contracts.deps.json
+C:\Users\Alan\Documents\GitHub\playground-csharp\testAPI\testAPI.Contracts\bin\Debug\net8.0\testAPI.Contracts.dll
+C:\Users\Alan\Documents\GitHub\playground-csharp\testAPI\testAPI.Contracts\bin\Debug\net8.0\testAPI.Contracts.pdb
+C:\Users\Alan\Documents\GitHub\playground-csharp\testAPI\testAPI.Contracts\obj\Debug\net8.0\testAPI.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alan\Documents\GitHub\playground-csharp\testAPI\testAPI.Contracts\obj\Debug\net8.0\testAPI.Contracts.AssemblyInfoInputs.cache
+C:\Users\Alan\Documents\GitHub\playground-csharp\testAPI\testAPI.Contracts\obj\Debug\net8.0\testAPI.Contracts.AssemblyInfo.cs
+C:\Users\Alan\Documents\GitHub\playground-csharp\testAPI\testAPI.Contracts\obj\Debug\net8.0\testAPI.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Alan\Documents\GitHub\playground-csharp\testAPI\testAPI.Contracts\obj\Debug\net8.0\testAPI.Contracts.sourcelink.json
+C:\Users\Alan\Documents\GitHub\playground-csharp\testAPI\testAPI.Contracts\obj\Debug\net8.0\testAPI.Contracts.dll
+C:\Users\Alan\Documents\GitHub\playground-csharp\testAPI\testAPI.Contracts\obj\Debug\net8.0\refint\testAPI.Contracts.dll
+C:\Users\Alan\Documents\GitHub\playground-csharp\testAPI\testAPI.Contracts\obj\Debug\net8.0\testAPI.Contracts.pdb
+C:\Users\Alan\Documents\GitHub\playground-csharp\testAPI\testAPI.Contracts\obj\Debug\net8.0\ref\testAPI.Contracts.dll
