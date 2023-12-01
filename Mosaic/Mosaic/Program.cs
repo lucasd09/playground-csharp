@@ -1,19 +1,10 @@
-using Microsoft.EntityFrameworkCore;
-using Pomelo.EntityFrameworkCore.MySql.Infrastructure; 
-
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 
-var configuration = builder.Configuration;
-
-var connectionString = configuration.GetConnectionString("DefaultConnection");
-
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseMySql(connectionString, new MySqlServerVersion(new Version(5, 7, 28))) 
-);
+builder.Services.AddScoped<Ftm04100Repository>();
 
 var app = builder.Build();
 

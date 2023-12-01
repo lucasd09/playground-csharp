@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mosaic")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44b866ed491aff5830ebd46a812ce13513e09003")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+53b14a1c892f4f5a611bf4768344acac1372ce7c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mosaic")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mosaic")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

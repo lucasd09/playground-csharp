@@ -1,6 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System;
+using System.Data;
+using System.Data.SqlClient;
 using System.Threading.Tasks;
+using Dapper;
 using Mosaic.Models.Ftm04100;
 
 [ApiController]
@@ -8,27 +12,27 @@ using Mosaic.Models.Ftm04100;
 public class MosaicController : ControllerBase
 {
     private readonly ILogger<MosaicController> _logger;
-    private readonly AppDbContext _dbContext;
+    private readonly Ftm04100Repository _ftm04100Repository;
 
-    public MosaicController(ILogger<MosaicController> logger, AppDbContext dbContext)
+    public MosaicController(ILogger<MosaicController> logger, Ftm04100Repository ftm04100Repository)
     {
         _logger = logger;
-        _dbContext = dbContext;
+        _ftm04100Repository = ftm04100Repository;
     }
 
     [HttpPost]
-    public async Task<IActionResult> Post([FromBody] Ftm04100 acesso)
+    public IActionResult Post([FromBody] Ftm04100 acesso)
     {
-        try
-        {
-            _dbContext.Ftm04100.Add(acesso);
-            await _dbContext.SaveChangesAsync();
-            return Ok("Dados salvos com sucesso!");
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "Erro ao salvar os dados no banco de dados.");
-            return StatusCode(500, "Erro interno do servidor " + ex);
-        }
+    try
+    {
+        _ftm04100Repository.Insert(acesso);
+        return Ok("Dados salvos com sucesso!");
     }
+    catch (Exception ex)
+    {
+        _logger.LogError(ex, "Erro ao salvar os dados no banco de dados.");
+        return StatusCode(500, "Erro interno do servidor " + ex);
+    }
+}
+
 }

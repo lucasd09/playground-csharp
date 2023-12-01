@@ -38,6 +38,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.24, )"
+            },
+            "Dapper.Contrib": {
+              "target": "Package",
+              "version": "[2.0.78, )"
+            },
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -46,23 +54,21 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
-            "Microsoft.EntityFrameworkCore": {
+            "MySql.Data": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.2.0, )"
             },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
+            "MySqlConnector": {
               "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Pomelo.EntityFrameworkCore.MySql": {
-              "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[2.3.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
             }
           },
           "imports": [
